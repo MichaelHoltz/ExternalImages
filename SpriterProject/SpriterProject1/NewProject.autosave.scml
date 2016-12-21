@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<spriter_data scml_version="1.0" generator="BrashMonkey Spriter" generator_version="r9">
+    <folder id="0">
+        <file id="0" name="MakeYourOwnMario.png" width="6187" height="3413" pivot_x="0" pivot_y="1"/>
+        <file id="1" name="MarioBodyFront.png" width="375" height="333" pivot_x="0.541333" pivot_y="0.57958"/>
+        <file id="2" name="Mario_Body_back.png" width="436" height="348" pivot_x="0.568807" pivot_y="0.494253"/>
+        <file id="3" name="MarioFoot.png" width="238" height="192" pivot_x="0.668067" pivot_y="0.822917"/>
+    </folder>
+    <entity id="0" name="Mario">
+        <obj_info name="bone_000" type="bone" w="572.017" h="10"/>
+        <obj_info name="bone_001" type="bone" w="268.963" h="10"/>
+        <obj_info name="bone_002" type="bone" w="291.784" h="10"/>
+        <obj_info name="bone_003" type="bone" w="268.963" h="10"/>
+        <obj_info name="bone_004" type="bone" w="291.784" h="10"/>
+        <animation id="0" name="NewAnimation" length="1000" interval="100">
+            <mainline>
+                <key id="0">
+                    <bone_ref id="0" timeline="3" key="0"/>
+                    <bone_ref id="1" parent="0" timeline="4" key="0"/>
+                    <bone_ref id="2" parent="0" timeline="5" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="2" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="1" timeline="2" key="0" z_index="2"/>
+                </key>
+                <key id="1" time="679">
+                    <bone_ref id="0" timeline="3" key="1"/>
+                    <bone_ref id="1" parent="0" timeline="4" key="0"/>
+                    <bone_ref id="2" parent="0" timeline="5" key="1"/>
+                    <bone_ref id="3" parent="0" timeline="6" key="0"/>
+                    <bone_ref id="4" parent="0" timeline="7" key="0"/>
+                    <object_ref id="0" parent="0" timeline="0" key="0" z_index="0"/>
+                    <object_ref id="1" parent="2" timeline="1" key="0" z_index="1"/>
+                    <object_ref id="2" parent="1" timeline="2" key="0" z_index="2"/>
+                </key>
+            </mainline>
+            <timeline id="0" name="MarioBodyFront">
+                <key id="0" spin="0">
+                    <object folder="0" file="1" x="134.943428" y="6.34596" angle="94.813551"/>
+                </key>
+            </timeline>
+            <timeline id="1" name="MarioFoot">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="94.42596" y="13.180976" angle="91.221544" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="2" name="MarioFoot_000">
+                <key id="0" spin="0">
+                    <object folder="0" file="3" x="103.869374" y="19.523144" angle="89.349099" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="3" obj="0" name="bone_000" object_type="bone">
+                <key id="0">
+                    <bone x="22" y="348" angle="267.544376"/>
+                </key>
+                <key id="1" time="679" spin="-1">
+                    <bone x="22" y="348" angle="267.904747"/>
+                </key>
+            </timeline>
+            <timeline id="4" obj="1" name="bone_001" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="209.521568" y="2.59083" angle="12.338725"/>
+                </key>
+            </timeline>
+            <timeline id="5" obj="2" name="bone_002" object_type="bone">
+                <key id="0" spin="0">
+                    <bone x="208.609009" y="1.510443" angle="2.104713" scale_x="1"/>
+                </key>
+                <key id="1" time="679" spin="0">
+                    <bone x="208.609009" y="1.510443" angle="2.104713" scale_x="1"/>
+                </key>
+            </timeline>
+            <timeline id="6" obj="3" name="bone_003" object_type="bone">
+                <key id="0" time="679" spin="0">
+                    <bone x="209.521568" y="2.59083" angle="12.338725" scale_x="1.198298" scale_y="1"/>
+                </key>
+            </timeline>
+            <timeline id="7" obj="4" name="bone_004" object_type="bone">
+                <key id="0" time="679" spin="0">
+                    <bone x="208.609009" y="1.510443" angle="2.326004" scale_x="1.196319" scale_y="1"/>
+                </key>
+            </timeline>
+        </animation>
+    </entity>
+</spriter_data>
